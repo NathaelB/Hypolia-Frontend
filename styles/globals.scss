@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "navbar.scss";
+@import "header.scss";
+@import "button.scss";
+
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  background-color: #181a26;
+  font-size: 1.2rem;
+  margin-top: 40px;
+
+}
+
+.separator--container {
+  background: url("../public/bg-slick-dot.png") ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 39px;
+  bottom: auto;
+  display: inline-block !important;
+  &::after, &::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 39px;
+    vertical-align: middle;
+    top: 0;
+  }
+  &::before {
+    background: url('../public/bg-slick-left.png') center center no-repeat transparent;
+    left: -18px;
+  }
+  &::after {
+    background: url("../public/bg-slick-right.png") center center no-repeat transparent;
+    right: -18px;
+  }
+  h3 {
+    font-family: 'penumbra-serif-std', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+  }
+}
+.separator {
+  position: relative;
+  height: 15px;
+  background: #160e11 url("../public/section-separator.webp") 50% 50% repeat-x;
+  background-size: auto 15px;
+
+}

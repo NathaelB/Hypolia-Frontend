@@ -1,0 +1,24 @@
+.home-cover {
+  background-image: url("../public/images/bg-header.jpeg");
+  background-position: center;
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  &::before, &::after {
+    content: '';
+    position: absolute;
+  }
+  &::before {
+    z-index: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(3,3,3);
+    background: linear-gradient(0deg, rgba(3,3,3,1) 0%, rgba(43,43,43,0.6629245448179272) 20%);
+  }
+  > div {
+    position: relative;
+    z-index: 5;
+  }
+}

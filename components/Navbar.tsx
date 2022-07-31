@@ -1,9 +1,10 @@
 import ButtonBlue from './buttons/ButtonBlue'
 import ButtonGreen from './buttons/ButtonGreen'
 import { useEffect } from 'react'
+import Image from 'next/image'
+import BranchPicture from '../public/images/navbar/branche.png'
 
 const Navbar = () => {
-
   useEffect(() => {
     let lastScrollTop = 0
     window.onscroll = () => {
@@ -14,7 +15,6 @@ const Navbar = () => {
         return
       }
       if ( st > lastScrollTop ){
-        console.log("ciao la navbar")
         navbar!.style.top = "-100px"
       } else {
         navbar!.style.top = "50px"
@@ -27,16 +27,20 @@ const Navbar = () => {
   return (
     <div className=" top-[50px] navbar fixed" id="navbar">
       {/* DESKTOP VERSION */}
+      <div className="branch">
+        <Image src={BranchPicture} alt={""} />
+      </div>
+      <div className="branch2">
+        <Image src={BranchPicture} alt={""} />
+      </div>
       <div className="navbar-container hidden lg:block">
         <div className="absolute top-0 flex flex-row h-full items-center justify-between w-full">
           <ul className="flex flex-row h-full items-center space-x-8">
             {/* LOGO */}
             <li className="menu-item-0 menu-item">
-              <button>
-                <div className="icon">
-                  <img src="https://cdn.discordapp.com/attachments/883079588522131466/912147668308992060/icon.png" alt="" />
-                </div>
-              </button>
+              <div className="icon">
+                <img src="https://cdn.discordapp.com/attachments/883079588522131466/912147668308992060/icon.png" alt="" />
+              </div>
             </li>
 
             <div className="links flex flex-row space-x-8">
@@ -48,7 +52,10 @@ const Navbar = () => {
           </ul>
           <div className="flex flex-row place-items-center space-x-4 mr-8  ">
             <ButtonBlue className={"px-6 py-3"} text={"Recrutement"} />
-            <ButtonGreen className={"px-6 py-3"} text={'Lorem'} />
+
+            <a href="authentication/login" >
+              <ButtonGreen className={"px-6 py-3"} text={'Se Connecter'} />
+            </a>
           </div>
 
         </div>

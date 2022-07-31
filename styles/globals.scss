@@ -224,6 +224,7 @@ p {
 .part--two {
   position: relative;
   border-top: 6px solid #0f1428;
+  background: url("../public/images/render.webp");
   &::before {
     content: "";
     position: absolute;
@@ -307,6 +308,23 @@ p {
       flex: 1 1 100%;
       min-width: 0;
       height: 98%;
+      .content--text {
+        .title {
+          -webkit-transition: .6s;
+          -moz-transition: .6s;
+          transition: .6s;
+          -webkit-transition-delay: .1s;
+          -moz-transition-delay: .1s;
+          transition-delay: .1s;
+          color: #c4b998;
+          font-size: 32px;
+          letter-spacing: 7px;
+          position: relative;
+          text-indent: 8px;
+          text-transform: uppercase;
+          top: 4px;
+        }
+      }
       .grid-image {
         height: 50%;
         display: flex;
@@ -322,6 +340,7 @@ p {
           transition: width 300ms ease;
           width: 33%;
           position: relative;
+          @apply border border-gray-800;
           div {
             position: relative;
             z-index: 10;
@@ -329,6 +348,7 @@ p {
               color: white
             }
             p {
+              transition: 200ms ease;
               visibility: hidden;
             }
           }

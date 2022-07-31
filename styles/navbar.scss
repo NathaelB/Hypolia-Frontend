@@ -48,7 +48,7 @@
       height: auto;
     }
 
-    .icon img {
+    .icon img{
       margin: -60px 5px -40px 10px;
       width: 100px;
       height: auto;
@@ -92,5 +92,20 @@
     .link-active {
       color: rgb(223, 202, 183);
     }
+  }
+  .branch {
+    position: absolute;
+    top: -85px;
+    transform: rotate(-110deg);
+    width: 200px;
+    z-index: -1;
+  }
+  .branch2 {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    transform: rotate(-110deg) rotateX(180deg);
+    width: 200px;
+    z-index: -1;
   }
 }

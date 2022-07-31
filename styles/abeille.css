@@ -1,0 +1,17 @@
+@keyframes slidein {
+  0% {
+    left: -10%; }
+  5% {
+    transform: translateY(10px); }
+  10% {
+    transform: translateY(0px); }
+  15% {
+    transform: translateY(10px); }
+  20% {
+    transform: translateY(0px); }
+  100% {
+    left: 100%; } }
+.abeille {
+  animation: 10s ease-in 1s infinite both running slidein; }
+
+/*# sourceMappingURL=abeille.css.map */

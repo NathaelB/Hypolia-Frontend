@@ -1,0 +1,38 @@
+.login {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  background: black;
+
+  .video {
+    video {
+      display: block;
+      filter: blur(3px);
+      width: auto;
+      max-width: inherit;
+      height: 100vh;
+      left: 50%;
+      position: relative;
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(14, 14, 14, 0.6);
+    }
+  }
+  .content {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}

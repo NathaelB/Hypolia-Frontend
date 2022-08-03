@@ -4,7 +4,10 @@ const Document = () => {
   return (
     <Html lang="fr">
       <Head>
-        <title>Hypolia</title>
+        <meta charSet="UTF-8" />
+        <meta name="description" content="Hypolia Server MMO-RPG" />
+        <meta name="keywords" content="Hypolia, Minecraft" />
+        <meta name="author" content="Bonnal Nathael" />
       </Head>
       <body>
         <Main />

@@ -18,7 +18,7 @@ const Header = () => {
           <div className=" mx-auto h-screen flex flex-col gap-4  place-content-center -translate-y-20">
             <span className="text-white font-thin font-serif text-3xl lg:text-7xl self-center">Rejoins-nous sur</span>
             <div className="self-center w-2/3 lg:w-1/3">
-              <Image src={LogoText} alt={"Logo"} />
+              <Image src={LogoText} alt={"Logo"} layout="responsive" loading={"lazy"}/>
             </div>
           </div>
         </div>

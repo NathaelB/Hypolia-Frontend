@@ -7,7 +7,7 @@ type Props = {
 const Abeille = ({className}: Props) => {
   return (
     <div className={`w-12 absolute z-50 abeille ${className}`} id="abeille">
-      <Image src={AbeillePicture} alt="" />
+      <Image src={AbeillePicture} alt="" layout='responsive'/>
     </div>
   )
 }

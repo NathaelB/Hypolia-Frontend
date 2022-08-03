@@ -67,7 +67,8 @@ const Footer: NextComponentType = () => {
             <Image
               className="logo-footer transition duration-200 ease-in-out"
               src={LogoPicture}
-              alt="Company name"
+              layout={"responsive"}
+              alt="Logo Hypolia"
             />
             <p className="text-gray-500 text-base">
               Making the world a better place through constructing elegant hierarchies.

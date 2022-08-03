@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/navbar/Navbar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
                 </div>
 
                 <div className=" relative lg:w-1/2 right-0 space-y-8 text-gray-200">
-                  <h3 className="title  w-2/3">the new skyblock</h3>
+                  <h3 className="title  w-2/3">Lorem ipsum</h3>
                   <div className="description lg:w-2/3 space-y-4">
                     <p className="">
                       Discover our first game, the Hypolia skyblock called Arkhane. After long hours of work, and
@@ -63,9 +63,6 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="min-h-[100vh] part--two">
-              <video className="" autoPlay loop>
-                <source src="https://d2vkoy1na2a6o6.cloudfront.net/videos/fsg-bg-wide-1d7a662b187e51758a166d75380b8e7bcb62ce97ddfd50f0eb0aefef32b27f478fbe293ea6cfff31f8b5e6b1ed2b5fbe1c0e0ca48bbf0408ddf6d4bc0172073b.mp4"/>
-              </video>
               <div className="section--panel--decoration">
                 <div className="decoration--left z-20">
                   <span/>
@@ -83,7 +80,11 @@ const Home: NextPage = () => {
                   </div>
                 </div>
                 <div className="content--body h-screen">
-                  <div className="grid-image">
+                  <div className="flex flex-col w-[80%] mx-auto text-center content--text">
+                    <h3 className="title">Nos derniers Articles</h3>
+                    <p className="paragraph w-2/3 mx-auto">Tu peux retrouver l'ensemble de nos articles sur notre blog, se portant sur les actualités, le lore ou d'autre informations du serveur. </p>
+                  </div>
+                  <div className="grid-image mx-auto">
                     <div className="item">
                       <div>
                         <span>Test 1</span>

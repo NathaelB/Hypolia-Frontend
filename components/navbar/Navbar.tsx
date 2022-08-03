@@ -1,17 +1,17 @@
-import ButtonBlue from './buttons/ButtonBlue'
-import ButtonGreen from './buttons/ButtonGreen'
+import ButtonBlue from '../buttons/ButtonBlue'
 import { useEffect } from 'react'
 import Image from 'next/image'
-import BranchPicture from '../public/images/navbar/branche.png'
-import IconPicture from '../public/icon.png'
+import BranchPicture from '../../public/images/navbar/branche.png'
+import IconPicture from '../../public/icon.png'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Login from "./Login";
 
 const Navbar = () => {
-
   const location = useRouter()
   const { pathname } = location
   const splitLocation = pathname.split('/')
+
   useEffect(() => {
     let lastScrollTop = 0
     window.onscroll = () => {
@@ -28,7 +28,6 @@ const Navbar = () => {
       }
 
       lastScrollTop = st
-
     }
   })
   return (
@@ -62,18 +61,12 @@ const Navbar = () => {
                   <Link href={"/recrutement"}>Recrutement</Link>
                 </li>
               </ul>
-
-
-
             </li>
-
           </ul>
           <div className="flex flex-row place-items-center space-x-4 mr-8">
             <ButtonBlue className={"px-6 py-3"} text={"Discord"} />
+            <Login />
 
-            <a href="authentication/login" >
-              <ButtonGreen className={"px-6 py-3"} text={'Se Connecter'} />
-            </a>
           </div>
 
         </div>

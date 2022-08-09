@@ -31,7 +31,7 @@ const Login = () => {
               <Menu.Button>
                 <ButtonGreen className={"px-6 py-3"} text={user.username} />
               </Menu.Button>
-              <Profil />
+              <Profil user={user}/>
             </Menu>
           </div>
         )
